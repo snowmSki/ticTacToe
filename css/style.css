@@ -1,0 +1,168 @@
+*{
+    font-family: "Rubik Gemstones", system-ui;
+}
+button{
+    background-color: black;
+    height: 3em;
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: silver;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(19, 2, 11, 0.63);
+    color:white;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+    height: 90vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+}
+
+body{
+    
+    background-color:goldenrod
+    
+}
+
+
+
+img{
+    width: 200px;
+    display: flex;
+    border-radius: 30px;
+    cursor:pointer
+}
+
+h1{
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+.game{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+
+    
+}
+
+.game .game__block{
+    width: 300px;
+    border:1px solid grey;
+    box-shadow: 1px 5px 50px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:center;
+    height: 300px;
+    border-radius: 10px
+}
+
+.game .game__block .block__items{
+    width: 85px;
+    height: 85px;
+    background-color:silver;
+    margin: 5px;
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.game .game__block .block__items .x{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.game .game__block .block__items:hover{
+    opacity: .5;
+}
+
+
+.game .game__block .block__items .o{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.none{
+    display: block;;
+}
+
+
+.game__turn{
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.game__container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.game__again{
+    display:block;
+    margin-top: 100px;
+}
+
+.p1{
+    color:blue;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+.p2{
+    color:green;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.winner{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
